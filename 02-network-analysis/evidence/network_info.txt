@@ -1,33 +1,35 @@
 === AUDITORÍA DE RED Y CONEXIONES ===
-Fecha de recolección: vie 07 ago 2026 22:50:30 -04
+Fecha de recolección: 2026-08-08 20:19:39 UTC
 
 --- INTERFACES DE RED ---
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    link/loopback aa:bb:cc:dd:ee:ff brd aa:bb:cc:dd:ee:ff
 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
-    link/ether aa:bb:cc:dd:ee:ff brd ff:ff:ff:ff:ff:ff
+    link/ether aa:bb:cc:dd:ee:ff brd aa:bb:cc:dd:ee:ff
 
 --- DIRECCIONES IP (Sanitizado) ---
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    link/loopback aa:bb:cc:dd:ee:ff brd aa:bb:cc:dd:ee:ff
     inet 127.0.0.1/8 scope host lo
        valid_lft forever preferred_lft forever
     inet6 ::1/128 scope host noprefixroute 
        valid_lft forever preferred_lft forever
 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
-    link/ether aa:bb:cc:dd:ee:ff brd ff:ff:ff:ff:ff:ff
-    inet 192.168.1.100/24 brd 192.168.1.255 scope global dynamic noprefixroute eth0
-       valid_lft 78547sec preferred_lft 78547sec
+    link/ether aa:bb:cc:dd:ee:ff brd aa:bb:cc:dd:ee:ff
+    inet 192.168.1.100/24 brd 192.168.1.100 scope global dynamic noprefixroute eth0
+       valid_lft 71717sec preferred_lft 71717sec
     inet6 fe80::1234:5678:90ab:cdef/64 scope link noprefixroute 
        valid_lft forever preferred_lft forever
 
---- PUERTOS Y SOCKETS EN ESCUCHA (TCP/UDP) ---
-Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                 
-udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*                                           
-udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*                                           
-udp   UNCONN 0      0            0.0.0.0:57452      0.0.0.0:*    users:(("browser-process",pid=1797,fd=145))
-udp   UNCONN 0      0            0.0.0.0:42827      0.0.0.0:*    users:(("browser-process",pid=1797,fd=196))
-udp   UNCONN 0      0            0.0.0.0:51078      0.0.0.0:*    users:(("browser-process",pid=1797,fd=221))
-udp   UNCONN 0      0            0.0.0.0:35104      0.0.0.0:*    users:(("browser-process",pid=1797,fd=134))
-tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*                                           
-tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*                                           
+--- PUERTOS Y SOCKETS EN ESCUCHA ---
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                   
+udp   UNCONN 0      0            0.0.0.0:53408      0.0.0.0:*    users:(("process",pid=XXXX,fd=XX))  
+udp   UNCONN 0      0            0.0.0.0:33829      0.0.0.0:*    users:(("process",pid=XXXX,fd=XX))  
+udp   UNCONN 0      0      192.168.1.100:51301      0.0.0.0:*    users:(("process",pid=XXXX,fd=XX))
+udp   UNCONN 0      0      192.168.1.100:56663      0.0.0.0:*    users:(("process",pid=XXXX,fd=XX))
+udp   UNCONN 0      0            0.0.0.0:36294      0.0.0.0:*    users:(("process",pid=XXXX,fd=XX))  
+udp   UNCONN 0      0            0.0.0.0:40834      0.0.0.0:*    users:(("process",pid=XXXX,fd=XX))  
+udp   UNCONN 0      0         127.0.0.1:53         0.0.0.0:*                                             
+udp   UNCONN 0      0      127.0.0.1%lo:53         0.0.0.0:*                                             
+tcp   LISTEN 0      4096      127.0.0.1:53         0.0.0.0:*                                             
+tcp   LISTEN 0      4096   127.0.0.1%lo:53         0.0.0.0:*                                             
