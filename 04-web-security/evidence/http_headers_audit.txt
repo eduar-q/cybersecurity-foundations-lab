@@ -1,0 +1,22 @@
+=== AUDITORÍA DE CABECERAS HTTP DE SEGURIDAD ===
+Fecha de recolección: 2026-08-08 20:35:08 UTC
+Objetivo auditado: target-app.local
+
+--- CABECERAS OBTENIDAS ---
+HTTP/2 200 
+date: Sat, 08 Aug 2026 20:35:08 GMT
+content-type: text/html
+server: cloudflare
+last-modified: Thu, 06 Aug 2026 02:15:20 GMT
+allow: GET, HEAD
+accept-ranges: bytes
+age: 13174
+cf-cache-status: HIT
+cf-ray: a2814e49cbe023f3-MIA
+
+
+--- EVALUACIÓN DE CABECERAS DEFENSIVAS ---
+[-] Strict-Transport-Security: FALTA (Riesgo Potencial)
+[-] X-Frame-Options: FALTA (Riesgo Potencial)
+[-] X-Content-Type-Options: FALTA (Riesgo Potencial)
+[-] Content-Security-Policy: FALTA (Riesgo Potencial)
