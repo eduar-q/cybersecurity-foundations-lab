@@ -22,8 +22,8 @@ mkdir -p "../evidence"
     find / -perm -2000 -type f 2>/dev/null
 
     echo ""
-    [[ $EUID -ne 0 ]] && echo "[!] ADVERTENCIA: Ejecutado sin root. Algunos SUID/SGID pueden faltar."
+    [[ $EUID -ne 0 ]] && echo "[!] ADVERTENCIA: Sin root pueden faltar SUID/SGID."
 
-} > "$OUTPUT"
+} | sed -e 's|/home/[^/]*|/home/analyst|g' > "$OUTPUT"
 
 echo "[+] Reporte generado: $OUTPUT"

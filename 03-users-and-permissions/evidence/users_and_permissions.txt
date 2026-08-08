@@ -1,9 +1,9 @@
 === AUDITORÍA DE USUARIOS, GRUPOS Y PERMISOS ===
-Fecha: 2026-08-08 22:07:53 UTC
+Fecha: 2026-08-08 22:19:34 UTC
 
 --- USUARIOS INTERACTIVOS ---
 root:x:0:0:root:/root:/bin/bash
-analyst:x:1000:1000:analyst:/home/analyst:/bin/bash
+analyst:x:1000:1000:analyst:/home/analyst/bin/bash
 
 --- GRUPO SUDO (ADMINISTRADORES) ---
 sudo:x:27:analyst
@@ -38,4 +38,4 @@ sudo:x:27:analyst
 /usr/lib/xorg/Xorg.wrap
 /usr/lib/x86_64-linux-gnu/utempter/utempter
 
-[!] ADVERTENCIA: Ejecutado sin root. Algunos SUID/SGID pueden faltar.
+[!] ADVERTENCIA: Sin root pueden faltar SUID/SGID.
