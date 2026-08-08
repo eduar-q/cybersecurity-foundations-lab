@@ -1,14 +1,14 @@
 === AUDITORÍA DE USUARIOS, GRUPOS Y PERMISOS ===
-Fecha de recolección: 2026-08-08 04:20:58 UTC
+Fecha: 2026-08-08 22:07:53 UTC
 
---- USUARIOS INTERACTIVOS (/bin/bash o /bin/zsh) ---
+--- USUARIOS INTERACTIVOS ---
 root:x:0:0:root:/root:/bin/bash
 analyst:x:1000:1000:analyst:/home/analyst:/bin/bash
 
---- MIEMBROS DEL GRUPO SUDO (ADMINISTRADORES) ---
+--- GRUPO SUDO (ADMINISTRADORES) ---
 sudo:x:27:analyst
 
---- ARCHIVOS CON PERMISOS ESPECIALES SUID (ROOT) ---
+--- BINARIOS SUID / SGID ---
 /usr/bin/fusermount3
 /usr/bin/passwd
 /usr/bin/pkexec
@@ -27,8 +27,6 @@ sudo:x:27:analyst
 /usr/lib/xorg/Xorg.wrap
 /usr/lib/openssh/ssh-keysign
 /usr/lib/polkit-1/polkit-agent-helper-1
-
---- ARCHIVOS CON PERMISOS ESPECIALES SGID ---
 /usr/libexec/camel-lock-helper-1.2
 /usr/bin/ssh-agent
 /usr/bin/crontab
@@ -40,4 +38,4 @@ sudo:x:27:analyst
 /usr/lib/xorg/Xorg.wrap
 /usr/lib/x86_64-linux-gnu/utempter/utempter
 
-[!] ADVERTENCIA: Ejecutado sin root. Algunos SUID pueden faltar.
+[!] ADVERTENCIA: Ejecutado sin root. Algunos SUID/SGID pueden faltar.
