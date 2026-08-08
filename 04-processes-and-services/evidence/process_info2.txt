@@ -1,18 +1,18 @@
 === AUDITORÍA DE PROCESOS Y SERVICIOS ===
-Fecha: 2026-08-08 22:31:05 UTC
+Fecha de recolección: 2026-08-08 20:56:22 UTC
 
---- TOP 10 PROCESOS POR CONSUMO DE CPU ---
-USER PID %CPU %MEM COMMAND
-analyst 17235 100 0.0 ps
-analyst 1813 12.4 8.5 firefox
-analyst 2149 5.9 8.4 firefox-bin
-analyst 3307 4.4 6.8 firefox-bin
-root 914 3.7 1.4 Xorg
-analyst 3396 1.7 5.3 firefox-bin
-analyst 3276 0.8 4.2 firefox-bin
-analyst 1415 0.5 1.2 xfwm4
-analyst 1458 0.5 0.7 mintreport-tray
-analyst 1120 0.3 0.3 pipewire-pulse
+--- TOP 10 PROCESOS POR CONSUMO DE RECURSOS ---
+USER       PID  %CPU %MEM  COMMAND
+analyst    12619   100   0.0  ps
+analyst     1813   8.7   9.1  firefox
+analyst    12591   6.6   0.6  xfce4-terminal
+root         914   2.4   1.4  Xorg
+analyst     2149   2.4   7.5  firefox-bin
+analyst     3307   1.9   5.5  firefox-bin
+analyst     3396   1.4   4.9  firefox-bin
+analyst     1458   0.5   0.7  mintreport-tray
+analyst     3276   0.4   3.8  firefox-bin
+analyst     1415   0.3   1.2  xfwm4
 
 --- SERVICIOS EN EJECUCIÓN ---
 UNIT                          LOAD   ACTIVE SUB     DESCRIPTION
