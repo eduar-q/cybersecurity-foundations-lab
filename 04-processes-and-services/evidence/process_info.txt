@@ -1,0 +1,32 @@
+=== AUDITORÍA DE PROCESOS Y SERVICIOS ===
+Fecha de recolección: 2026-08-08 20:45:09 UTC
+
+--- TOP 10 PROCESOS POR CONSUMO DE RECURSOS ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+analyst 12201 16.6 0.0 16368 4828 pts/0 R+ 16:45 0:00 ps aux --sort=-%cpu
+analyst 1813 8.3 8.5 12740776 684144 ? Sl 12:24 21:46 /usr/lib/firefox/firefox
+analyst 12137 3.1 0.6 480080 51476 ? Sl 16:44 0:01 xfce4-terminal
+root         914  2.3  1.4 540704 115292 tty7    Ssl+ 12:14   6:14 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+analyst 3307 1.7 5.0 3073612 406552 ? Sl 12:43 4:07 /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:48494 -prefMapHandle 1:287745 -jsInitHandle 2:156120 -parentBuildID 20260706120035 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {9e9142a0-7a68-4509-8932-1762f22430c5} -parentPid 1813 -crashReporter 6 -crashHelperPid 1818 -crashHelper 7 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser 13 tab
+analyst 2149 1.4 7.5 11910164 605956 ? Sl 12:24 3:51 /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:48199 -prefMapHandle 1:287745 -jsInitHandle 2:156120 -parentBuildID 20260706120035 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {48f212a7-9a94-4c67-a1f1-5cfac06891e1} -parentPid 1813 -crashReporter 6 -crashHelperPid 1818 -crashHelper 7 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser 9 tab
+analyst 3396 1.4 4.6 3021460 372448 ? Sl 12:43 3:27 /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:48494 -prefMapHandle 1:287745 -jsInitHandle 2:156120 -parentBuildID 20260706120035 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {8b9d8d7f-16ab-4644-8b53-3b8d5ee1f4a6} -parentPid 1813 -crashReporter 6 -crashHelperPid 1818 -crashHelper 7 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser 15 tab
+analyst 10314 0.8 2.9 2828216 236552 ? Sl 16:22 0:11 /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:48533 -prefMapHandle 1:287745 -jsInitHandle 2:156120 -parentBuildID 20260706120035 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {44fbc3a1-52db-4c95-ba7e-d19b82009dcc} -parentPid 1813 -crashReporter 6 -crashHelperPid 1818 -crashHelper 7 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser 73 tab
+analyst 1458 0.5 0.7 568940 59216 ? Sl 12:22 1:20 mintreport-tray
+analyst 3276 0.4 3.9 2987692 315636 ? Sl 12:43 0:59 /usr/lib/firefox/firefox-bin -contentproc -isForBrowser -prefsHandle 0:48494 -prefMapHandle 1:287745 -jsInitHandle 2:156120 -parentBuildID 20260706120035 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {fc6a23f9-79d2-4dba-99c3-e6633fe76f35} -parentPid 1813 -crashReporter 6 -crashHelperPid 1818 -crashHelper 7 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appDir /usr/lib/firefox/browser 12 tab
+
+--- SERVICIOS EN EJECUCIÓN (systemctl) ---
+  UNIT                          LOAD   ACTIVE SUB     DESCRIPTION
+  accounts-daemon.service       loaded active running Accounts Service
+  colord.service                loaded active running Manage, Install and Generate Color Profiles
+  cron.service                  loaded active running Regular background program processing daemon
+  dbus.service                  loaded active running D-Bus System Message Bus
+  fwupd.service                 loaded active running Firmware update daemon
+  getty@tty1.service            loaded active running Getty on tty1
+  irqbalance.service            loaded active running irqbalance daemon
+  kerneloops.service            loaded active running Tool to automatically collect and submit kernel crash signatures
+  lightdm.service               loaded active running Light Display Manager
+  ModemManager.service          loaded active running Modem Manager
+  NetworkManager.service        loaded active running Network Manager
+  polkit.service                loaded active running Authorization Manager
+  power-profiles-daemon.service loaded active running Power Profiles daemon
+  rsyslog.service               loaded active running System Logging Service
