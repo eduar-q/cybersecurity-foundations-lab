@@ -1,0 +1,20 @@
+=== AUDITORÍA DE LOGS Y AUTENTICACIÓN ===
+Fecha: 2026-08-08 23:50:21 UTC
+
+--- INTENTOS FALLIDOS DE LOGIN ---
+/var/log/auth.log:2026-08-03T12:16:01.687056-04:00 analyst-OptiPlex-380 lightdm: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:1 ruser= rhost=  user=analyst
+/var/log/auth.log:2026-08-08T01:51:37.309080-04:00 analyst-OptiPlex-380 login[19686]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty2 ruser= rhost= 
+
+--- ÚLTIMAS SESIONES ---
+analyst    tty7         :0               Sat Aug  8 12:22    gone - no logout
+reboot   system boot  6.17.0-35-generi Sat Aug  8 12:14   still running
+analyst    tty7         :0               Sat Aug  8 01:53 - 02:26  (00:32)
+reboot   system boot  6.17.0-35-generi Sat Aug  8 01:52 - 02:26  (00:33)
+analyst    tty7         :0               Fri Aug  7 20:42 - 01:52  (05:09)
+reboot   system boot  6.17.0-35-generi Fri Aug  7 20:39 - 01:52  (05:13)
+analyst    tty7         :0               Fri Aug  7 06:05 - crash  (14:33)
+reboot   system boot  6.17.0-35-generi Fri Aug  7 06:04 - 01:52  (19:48)
+analyst    tty7         :0               Thu Aug  6 14:07 - 17:15  (03:07)
+reboot   system boot  6.17.0-35-generi Thu Aug  6 14:06 - 17:15  (03:08)
+
+wtmp empieza Sun Jul 12 18:48:20 2026
