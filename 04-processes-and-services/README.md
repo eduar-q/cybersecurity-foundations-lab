@@ -5,10 +5,10 @@ Auditar la actividad de procesos en tiempo real, identificar el consumo de recur
 
 ## 🛠️ Herramientas Utilizadas
 - `ps aux --sort=-%cpu` - Inspección y ordenamiento de procesos activos por uso de CPU.
-- `systemctl list-units --type=service` - Verificación de servicios e hilos del sistema en ejecución.
-- `awk` - Formateo de salida en tabla limpia (`printf`), sanitización de usuarios y truncamiento de argumentos/rutas largas para evitar ruido visual.
-- `sed` - Sanitización en *pipeline* de hostnames (con escape de caracteres) y rutas del sistema.
+- `systemctl list-units --type=service` - Verificación de servicios activos en segundo plano.
+- `awk` - Filtrado de los top 10 procesos, anonimización precisa de la cuenta personal (`${SUDO_USER:-$(whoami)}`) y truncamiento de rutas/argumentos de ejecutables.
+- `sed` - Sanitización en *pipeline* para enmascarar rutas personales dentro de `/home`.
 
 ## 📜 Automatización y Evidencias
-- **Script:** `scripts/process_collector.sh` (Recolección automatizada, formateo tabular y sanitización directa en *pipeline*).
-- **Evidencia:** `evidence/process_info.txt` (Reporte ordenado y anonimizado con timestamp UTC).
+- **Script:** `scripts/process_collector.sh` (Recolección automatizada, filtrado limpio y sanitización en *pipeline*).
+- **Evidencia:** `evidence/process_info.txt` (Reporte ordenado y anonimizado en formato UTC).
