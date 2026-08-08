@@ -1,5 +1,5 @@
 === AUDITORÍA DE RED Y CONEXIONES ===
-Fecha de recolección: 2026-08-08 21:22:13 UTC
+Fecha de recolección: 2026-08-08 21:42:11 UTC
 
 --- DIRECCIONES E INTERFACES DE RED ---
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -10,19 +10,21 @@ Fecha de recolección: 2026-08-08 21:22:13 UTC
        valid_lft forever preferred_lft forever
 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
     link/ether aa:bb:cc:dd:ee:ff brd aa:bb:cc:dd:ee:ff
-    inet 192.168.1.100/24 brd 192.168.1.100 scope global dynamic noprefixroute eth0
-       valid_lft 67963sec preferred_lft 67963sec
+    inet 192.168.1.100/24 brd 192.168.0.255 scope global dynamic noprefixroute eth0
+       valid_lft 66765sec preferred_lft 66765sec
     inet6 fe80::1234:5678:90ab:cdef/64 scope link noprefixroute 
        valid_lft forever preferred_lft forever
 
 --- PUERTOS Y SOCKETS EN ESCUCHA ---
 Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                   
-udp   UNCONN 0      0            0.0.0.0:53468      0.0.0.0:*    users:(("firefox-bin",pid=1813,fd=122))  
-udp   UNCONN 0      0      192.168.1.100:49568      0.0.0.0:*    users:(("Socket Process",pid=1873,fd=31))
+udp   UNCONN 0      0            0.0.0.0:45976      0.0.0.0:*    users:(("firefox-bin",pid=1813,fd=133))  
+udp   UNCONN 0      0            0.0.0.0:46670      0.0.0.0:*    users:(("firefox-bin",pid=1813,fd=52))   
+udp   UNCONN 0      0            0.0.0.0:34438      0.0.0.0:*    users:(("firefox-bin",pid=1813,fd=116))  
+udp   UNCONN 0      0      192.168.0.179:55333      0.0.0.0:*    users:(("Socket Process",pid=1873,fd=31))
+udp   UNCONN 0      0      192.168.0.179:43458      0.0.0.0:*    users:(("Socket Process",pid=1873,fd=33))
+udp   UNCONN 0      0      192.168.0.179:47633      0.0.0.0:*    users:(("Socket Process",pid=1873,fd=34))
 udp   UNCONN 0      0            0.0.0.0:52368      0.0.0.0:*    users:(("firefox-bin",pid=1813,fd=106))  
-udp   UNCONN 0      0            0.0.0.0:44524      0.0.0.0:*    users:(("firefox-bin",pid=1813,fd=108))  
-udp   UNCONN 0      0            0.0.0.0:40896      0.0.0.0:*    users:(("firefox-bin",pid=1813,fd=133))  
-udp   UNCONN 0      0      192.168.1.100:49189      0.0.0.0:*    users:(("Socket Process",pid=1873,fd=32))
+udp   UNCONN 0      0      192.168.0.179:36659      0.0.0.0:*    users:(("Socket Process",pid=1873,fd=32))
 udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*                                             
 udp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*                                             
 tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*                                             
