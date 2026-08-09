@@ -14,7 +14,7 @@ git clone [https://github.com/eduar-q/cybersecurity-foundations-lab.git](https:/
 cd cybersecurity-foundations-lab
 
 # Ejecutar un módulo
-./01-*/scripts/*.sh
+sudo ./01-*/scripts/*.sh
 
 # Ver evidencias generadas
 cat 01-*/evidence/*.txt
@@ -22,7 +22,7 @@ cat 01-*/evidence/*.txt
 
 ---
 
-## 📁 Módulos
+## 📁 Módulos Completados
 
 | # | Módulo | Qué revisa |
 |---|--------|-----------|
@@ -32,10 +32,6 @@ cat 01-*/evidence/*.txt
 | 04 | [processes-and-services](./04-processes-and-services) | Procesos activos, servicios systemd |
 | 05 | [logging-and-auditing](./05-logging-and-auditing) | Logs de autenticación, intentos fallidos |
 | 06 | [ssh-security](./06-ssh-security) | Configuración SSH, claves autorizadas |
-| 07 | [firewall-and-network-filtering](./07-firewall-and-network-filtering) | Estado de UFW/iptables |
-| 08 | [system-hardening](./08-system-hardening) | Checklist de hardening básico |
-| 09 | [persistence-review](./09-persistence-review) | Mecanismos de persistencia |
-| 10 | [incident-investigation](./10-incident-investigation) | Reconstrucción de eventos |
 
 ---
 
