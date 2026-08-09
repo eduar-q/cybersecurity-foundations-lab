@@ -1,0 +1,8 @@
+=== AUDITORÍA DE SEGURIDAD SSH ===
+Fecha: 2026-08-09 00:08:28 UTC
+
+--- CONFIGURACIÓN SSHD ---
+/etc/ssh/sshd_config:X11Forwarding yes
+[!] sshd_config no accesible
+
+--- CLAVES AUTORIZADAS POR USUARIO ---
