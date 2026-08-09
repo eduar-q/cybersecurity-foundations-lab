@@ -3,7 +3,7 @@
 Toolkit de auditoría de seguridad para Linux.  
 Desarrollado en Bash nativo para demostrar fundamentos de ciberseguridad defensiva (Blue Team / SOC).
 
-&gt; **No es un curso.** Es un conjunto de scripts que auditan, analizan y reportan el estado de seguridad de un servidor Linux.
+**No es un curso.** Es un conjunto de scripts que auditan, analizan y reportan el estado de seguridad de un servidor Linux.
 
 ---
 
