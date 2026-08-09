@@ -3,7 +3,19 @@
 Toolkit de auditoría de seguridad para Linux.  
 Desarrollado en Bash nativo para demostrar fundamentos de ciberseguridad defensiva (Blue Team / SOC).
 
-> **No es un curso.** Es un conjunto de scripts que auditan, analizan y reportan el estado de seguridad de un servidor Linux.
+&gt; **No es un curso.** Es un conjunto de scripts que auditan, analizan y reportan el estado de seguridad de un servidor Linux.
+
+---
+
+## 📚 Requisitos Previos
+
+Este proyecto asume que ya conoces:
+
+- **Linux básico:** navegar por carpetas, usar `sudo`, editar archivos de texto.
+- **Conceptos de red:** qué es una IP, un puerto, y SSH.
+- **Bash elemental:** saber qué es un script y cómo ejecutarlo.
+
+**No es un curso de Linux desde cero.** Es un toolkit para aplicar seguridad sobre lo que ya sabes.
 
 ---
 
@@ -23,7 +35,7 @@ Desarrollado en Bash nativo para demostrar fundamentos de ciberseguridad defensi
 ## ⚡ Uso Rápido
 
 ```bash
-git clone [https://github.com/eduar-q/cybersecurity-foundations-lab.git](https://github.com/eduar-q/cybersecurity-foundations-lab.git)
+git clone https://github.com/eduar-q/cybersecurity-foundations-lab.git
 cd cybersecurity-foundations-lab
 
 # Ejecutar un módulo
