@@ -64,9 +64,12 @@ cat 01-*/evidence/*.txt
 
 ---
 
+
 ## ⚠️ Disclaimer
 
-Este proyecto es una herramienta de revisión informativa. No reemplaza un pentest ni garantiza seguridad total. Úsalo solo en sistemas que te pertenezcan.
+Este proyecto es una herramienta de revisión informativa y solo-lectura. 
+No modifica configuraciones, no reemplaza un pentest ni garantiza seguridad total. 
+Úsalo solo en sistemas que te pertenezcan o en los que tengas autorización expresa.
 
 ---
 
