@@ -1,5 +1,5 @@
 === AUDITORÍA DE LOGS Y AUTENTICACIÓN ===
-Fecha: 2026-08-08 23:50:21 UTC
+Fecha: 2026-08-09 01:07:11 UTC
 
 --- INTENTOS FALLIDOS DE LOGIN ---
 /var/log/auth.log:2026-08-03T12:16:01.687056-04:00 analyst-OptiPlex-380 lightdm: pam_unix(lightdm:auth): authentication failure; logname= uid=0 euid=0 tty=:1 ruser= rhost=  user=analyst

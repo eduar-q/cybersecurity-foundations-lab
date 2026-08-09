@@ -30,4 +30,4 @@ HOST=$(hostname)
     -e "s/$HOST/soc-lab-node1/g" \
     > "$OUTPUT"
 
-echo "[+] Reporte generado en $OUTPUT"
+echo "[+] Reporte generado en 05-logging-and-auditing/evidence/audit_log_info.txt"

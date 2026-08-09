@@ -7,6 +7,19 @@ Desarrollado en Bash nativo para demostrar fundamentos de ciberseguridad defensi
 
 ---
 
+## 📸 Demostración Visual
+
+### 1. Ejecución Automatizada en Terminal
+![Demo Terminal](images/01-demo-terminal.png)
+
+### 2. Generación de Evidencia y Sanitización OpSec
+![Demo Evidencia](images/02-demo-evidencia.png)
+
+### 3. Estructura Modular del Repositorio
+![Estructura del Repositorio](images/03-estructura-repo.png)
+
+---
+
 ## ⚡ Uso Rápido
 
 ```bash
